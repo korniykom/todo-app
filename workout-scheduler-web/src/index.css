@@ -12,7 +12,7 @@ html {
     Default: 16px
   */
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow-x: scroll;
   overflow-y: hidden;
   scroll-behavior: smooth;
 }

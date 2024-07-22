@@ -8,6 +8,8 @@
   width: 45rem;
   height: 56rem;
   border-radius: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h2 {
   font-size: 4.8rem;
