@@ -56,7 +56,9 @@ export default function TopBar() {
       <div className="top-bar-right">
         <span>
           {" "}
-          {`${daysOfTheWeek[currentDate.getDay()]} ${currentDate.getDate()} ${
+          {`${
+            daysOfTheWeek[currentDate.getDay() - 1]
+          } ${currentDate.getDate()} ${
             months[currentDate.getMonth()]
           }  ${currentDate.getFullYear()}`}
         </span>
