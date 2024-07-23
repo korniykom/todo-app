@@ -12,11 +12,9 @@ html {
     Default: 16px
   */
   font-size: 62.5%;
-  overflow-x: scroll;
-  overflow-y: hidden;
+
   scroll-behavior: smooth;
 }
 body {
-  background-color: #343a40;
   color: #ced4da;
 }

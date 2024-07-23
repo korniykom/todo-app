@@ -1,0 +1,112 @@
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  background-color: #2125299a;
+  color: #ced4da;
+  box-shadow: 1px 0px 8px #212529b9;
+}
+
+.top-bar-right,
+.top-bar-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.top-bar-left select {
+  width: 10rem;
+  height: 3rem;
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: #212529 0px 0 8px;
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: 1px 0px 8px #21252959;
+}
+
+.bg-green {
+  background-image: linear-gradient(
+    45deg,
+    hsl(162deg 72% 65%) 0%,
+    hsl(164deg 71% 63%) 13%,
+    hsl(166deg 70% 62%) 19%,
+    hsl(168deg 70% 60%) 24%,
+    hsl(169deg 69% 59%) 28%,
+    hsl(171deg 68% 57%) 32%,
+    hsl(173deg 67% 56%) 35%,
+    hsl(174deg 66% 54%) 39%,
+    hsl(175deg 66% 53%) 42%,
+    hsl(177deg 65% 52%) 45%,
+    hsl(178deg 64% 50%) 48%,
+    hsl(179deg 66% 49%) 52%,
+    hsl(180deg 68% 48%) 55%,
+    hsl(181deg 71% 47%) 58%,
+    hsl(182deg 73% 47%) 61%,
+    hsl(183deg 75% 46%) 65%,
+    hsl(184deg 76% 46%) 68%,
+    hsl(185deg 76% 46%) 72%,
+    hsl(185deg 76% 46%) 76%,
+    hsl(186deg 75% 46%) 81%,
+    hsl(187deg 74% 47%) 87%,
+    hsl(188deg 72% 47%) 100%
+  );
+}
+.bg-pink {
+  background-image: linear-gradient(
+    45deg,
+    hsl(288deg 83% 71%) 0%,
+    hsl(290deg 78% 70%) 13%,
+    hsl(293deg 73% 68%) 19%,
+    hsl(295deg 69% 67%) 24%,
+    hsl(298deg 65% 66%) 28%,
+    hsl(300deg 62% 65%) 32%,
+    hsl(303deg 63% 65%) 35%,
+    hsl(306deg 64% 64%) 39%,
+    hsl(308deg 65% 64%) 42%,
+    hsl(311deg 66% 64%) 45%,
+    hsl(313deg 67% 63%) 48%,
+    hsl(316deg 67% 63%) 52%,
+    hsl(318deg 68% 63%) 55%,
+    hsl(321deg 69% 62%) 58%,
+    hsl(323deg 70% 62%) 61%,
+    hsl(325deg 71% 62%) 65%,
+    hsl(328deg 72% 61%) 68%,
+    hsl(330deg 73% 61%) 72%,
+    hsl(332deg 73% 61%) 76%,
+    hsl(334deg 74% 60%) 81%,
+    hsl(337deg 75% 60%) 87%,
+    hsl(339deg 76% 59%) 100%
+  );
+}
+.bg-blue {
+  background-image: linear-gradient(
+    45deg,
+    hsl(288deg 83% 71%) 0%,
+    hsl(286deg 80% 71%) 13%,
+    hsl(283deg 78% 72%) 19%,
+    hsl(280deg 75% 72%) 24%,
+    hsl(277deg 73% 72%) 28%,
+    hsl(273deg 70% 73%) 32%,
+    hsl(269deg 67% 73%) 35%,
+    hsl(264deg 64% 74%) 39%,
+    hsl(259deg 61% 74%) 42%,
+    hsl(252deg 59% 74%) 45%,
+    hsl(245deg 56% 74%) 48%,
+    hsl(237deg 54% 74%) 52%,
+    hsl(229deg 55% 72%) 55%,
+    hsl(222deg 55% 70%) 58%,
+    hsl(216deg 56% 68%) 61%,
+    hsl(210deg 57% 66%) 65%,
+    hsl(206deg 57% 64%) 68%,
+    hsl(201deg 58% 62%) 72%,
+    hsl(197deg 59% 59%) 76%,
+    hsl(194deg 60% 56%) 81%,
+    hsl(191deg 62% 52%) 87%,
+    hsl(188deg 72% 47%) 100%
+  );
+}
