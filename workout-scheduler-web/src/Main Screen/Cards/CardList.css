@@ -4,6 +4,8 @@
   gap: 2rem;
   scrollbar-width: none;
   margin-top: 8rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
 }
 
 @media (min-width: 1280px) {
