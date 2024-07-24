@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   transition-duration: 0.26s;
+  margin-bottom: 4rem;
 }
 .conteiner h2 {
   font-size: 4.8rem;
@@ -125,8 +126,43 @@
   border-radius: 2rem;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  margin: 2rem;
 }
 
+.day-card::after,
+.day-card::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 1rem;
+  border-radius: 2.6rem;
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(289deg 100% 21%) 11%,
+    hsl(315deg 100% 27%) 22%,
+    hsl(329deg 100% 36%) 33%,
+    hsl(337deg 100% 43%) 44%,
+    hsl(357deg 91% 59%) 56%,
+    hsl(17deg 100% 59%) 67%,
+    hsl(34deg 100% 53%) 78%,
+    hsl(45deg 100% 50%) 89%,
+    hsl(55deg 100% 50%) 100%
+  );
+}
+.day-card::after {
+  filter: blur(2rem);
+}
 .conteiner:hover {
   transform: translateY(-4rem);
+}
+
+.day-card:hover {
+  box-shadow: 0 48px 48px rgba(0, 0, 0, 0.6);
 }

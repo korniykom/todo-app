@@ -5,28 +5,6 @@ import abs from "../../img/abs.jpg";
 import legs from "../../img/legs.jpg";
 export default function DayCard({ mussleGroup = "none" }) {
   const cardStyle = {
-    boxShadow: `0 0 4px 2px ${
-      mussleGroup === "chest"
-        ? "#38D9A9"
-        : mussleGroup === "arms"
-        ? "#15AABF"
-        : mussleGroup === "abs"
-        ? "#D6336C"
-        : mussleGroup === "legs"
-        ? "#15AABF"
-        : ""
-    }`,
-    border: `0.3rem solid ${
-      mussleGroup === "chest"
-        ? "#38D9A9"
-        : mussleGroup === "arms"
-        ? "#15AABF"
-        : mussleGroup === "abs"
-        ? "#D6336C"
-        : mussleGroup === "legs"
-        ? "#6741d9"
-        : ""
-    }`,
     backgroundImage: `linear-gradient${
       mussleGroup === "chest"
         ? "(0deg, rgba(99,230,190,0.4) 0%, rgba(11,114,133,0.3) 100%)"
