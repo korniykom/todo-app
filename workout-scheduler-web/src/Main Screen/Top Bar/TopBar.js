@@ -32,15 +32,6 @@ export default function TopBar() {
       <div className="top-bar-left">
         <p>Difficulty: </p>
         <select
-          className={
-            difficulty === "easy"
-              ? "bg-green"
-              : difficulty === "medium"
-              ? "bg-blue"
-              : difficulty === "hard"
-              ? "bg-pink"
-              : ""
-          }
           value={difficulty}
           onChange={(e) => {
             console.log(e.target.value);
@@ -50,7 +41,6 @@ export default function TopBar() {
           <option value="easy">Easy</option>
           <option value="medium">Medium</option>
           <option value="hard">Hard</option>
-          {/* TODO Extreme */}
         </select>
       </div>
       <div className="top-bar-right">
