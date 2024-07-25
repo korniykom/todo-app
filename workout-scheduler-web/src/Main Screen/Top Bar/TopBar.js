@@ -44,15 +44,16 @@ export default function TopBar() {
         </select>
       </div>
       <div className="top-bar-right">
-        <span>
-          {`${daysOfTheWeek[currentDate.getDay() - 1]} ${
-            currentDate.getDay() === (1 || 5)
-              ? "(Chest & Arms & Abs Day)"
+        <p>{`${daysOfTheWeek[currentDate.getDay() - 1]}`}</p>
+        <p>
+          {` ${
+            currentDate.getDay() === (4 || 5)
+              ? "(Chest&Arms&Abs)"
               : currentDate.getDay() === 3
               ? "Abs Day"
-              : "Leasure Day"
+              : "(Chill out)"
           } `}
-        </span>
+        </p>
       </div>
     </div>
   );

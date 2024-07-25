@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   background-color: #212529;
   box-shadow: 1px 0px 8px #212529b9;
+  height: 8rem;
   background-image: linear-gradient(
     0deg,
     hsl(10deg 100% 49%) 0%,
@@ -22,18 +23,25 @@
   color: transparent;
 }
 
-.top-bar-right,
+.top-bar-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 0.8rem;
+}
+
 .top-bar-left {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   padding: 0.8rem;
 }
 
 .top-bar-left select {
-  width: 10rem;
-  height: 3rem;
-  font-size: 1.9rem;
+  width: auto;
+  height: 2.7rem;
+  font-size: 2.3rem;
   margin-left: 1rem;
   background-image: linear-gradient(
     0deg,
@@ -50,9 +58,12 @@
   );
   background-clip: text;
   color: transparent;
-  text-align: center;
+  text-align: start;
   border: none;
   border-radius: 0.4rem;
   box-shadow: 1px 0px 8px #21252959;
   background-color: transparent;
+}
+.top-bar-left select:focus {
+  outline: none;
 }
