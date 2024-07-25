@@ -46,7 +46,11 @@ export default function TopBar() {
       <div className="top-bar-right">
         <span>
           {`${daysOfTheWeek[currentDate.getDay() - 1]} ${
-            currentDate.getDay() === (1 || 5) ? "(Chest & Arms Day)" : ""
+            currentDate.getDay() === (1 || 5)
+              ? "(Chest & Arms & Abs Day)"
+              : currentDate.getDay() === 3
+              ? "Abs Day"
+              : "Leasure Day"
           } `}
         </span>
       </div>
