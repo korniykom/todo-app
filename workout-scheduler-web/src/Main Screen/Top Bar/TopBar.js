@@ -1,5 +1,5 @@
 import "./TopBar.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export default function TopBar() {
   const daysOfTheWeek = [
     "Monday",
@@ -25,7 +25,17 @@ export default function TopBar() {
     "Dec",
   ];
   const currentDate = new Date();
-  const [difficulty, setDifficulty] = useState("easy");
+  const [difficulty, setDifficulty] = useState(
+    localStorage.getItem("difficulty") || "easy"
+  );
+
+  useEffect(() => {
+    localStorage.setItem("difficulty", difficulty);
+  }, [difficulty]);
+
+  function changeDifficulty(difficulty) {
+    setDifficulty(difficulty);
+  }
 
   return (
     <div className="top-bar">
@@ -34,8 +44,7 @@ export default function TopBar() {
         <select
           value={difficulty}
           onChange={(e) => {
-            console.log(e.target.value);
-            setDifficulty(e.target.value);
+            changeDifficulty(e.target.value);
           }}
         >
           <option value="easy">Easy</option>
