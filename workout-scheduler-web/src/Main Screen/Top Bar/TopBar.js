@@ -10,20 +10,7 @@ export default function TopBar() {
     "Saturday",
     "Sunday",
   ];
-  const months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
+
   const currentDate = new Date();
   const [difficulty, setDifficulty] = useState(
     localStorage.getItem("difficulty") || "easy"
@@ -56,7 +43,7 @@ export default function TopBar() {
         <p>{`${daysOfTheWeek[currentDate.getDay() - 1]}`}</p>
         <p>
           {` ${
-            currentDate.getDay() === (4 || 5)
+            currentDate.getDay() === (1 || 5)
               ? "(Chest&Arms&Abs)"
               : currentDate.getDay() === 3
               ? "Abs Day"
