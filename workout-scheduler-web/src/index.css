@@ -12,9 +12,42 @@ html {
     Default: 16px
   */
   font-size: 62.5%;
-
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 body {
-  color: #ced4da;
+  background-color: #1e192b;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav h3 {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-block {
+  width: 5.4rem;
+}
+
+h3 {
+  color: #b69df7;
+  font-size: 2.4rem;
+}
+
+.card {
+  width: 30rem;
+  height: 40rem;
+  background-color: #332d41;
+}
+
+.card-list {
+  display: flex;
+  gap: 2rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
