@@ -1,7 +1,8 @@
-export default function Nav({ children }) {
+export default function Nav({ day }) {
   return (
     <div className="nav">
       <svg
+        className="icon"
         width="54"
         height="54"
         viewBox="0 0 54 54"
@@ -13,8 +14,8 @@ export default function Nav({ children }) {
           fill="#B69DF7"
         />
       </svg>
-      <h3 className="nav-title">{children}</h3>
-      <div className="nav-block"></div>
+      <h3 className="nav-title">{day}</h3>
+      <div className="icon"></div>
     </div>
   );
 }

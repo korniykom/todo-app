@@ -1,0 +1,17 @@
+{
+  "Abs": {
+    "title": "Abs",
+    "duration": 15,
+    "workoutDays": ["Monday", "Wednesday", "Friday"]
+  },
+  "Arms": {
+    "title": "Arms",
+    "duration": 15,
+    "workoutDays": ["Monday", "Friday"]
+  },
+  "Chest": {
+    "title": "Chest",
+    "duration": 15,
+    "workoutDays": ["Monday", "Friday"]
+  }
+}

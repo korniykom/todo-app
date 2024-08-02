@@ -30,10 +30,6 @@ body {
   text-align: center;
 }
 
-.nav-block {
-  width: 5.4rem;
-}
-
 h2 {
   color: #b69df7;
   font-size: 3.2rem;
@@ -56,12 +52,18 @@ h4 {
   border-radius: 1rem;
 }
 
+.icon {
+  margin: 0.8rem;
+  width: 5.4rem;
+}
 .card-list {
   display: flex;
   gap: 2rem;
   overflow-y: scroll;
   scrollbar-width: none;
+  margin: 2.2rem;
 }
+
 .nav-title {
   color: #b69df7;
   font-weight: 400;
