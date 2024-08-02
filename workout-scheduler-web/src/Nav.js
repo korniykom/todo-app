@@ -13,7 +13,7 @@ export default function Nav({ children }) {
           fill="#B69DF7"
         />
       </svg>
-      <h3 className="cool">{children}</h3>
+      <h3 className="nav-title">{children}</h3>
       <div className="nav-block"></div>
     </div>
   );
