@@ -1,7 +1,8 @@
-export default function Nav({ day }) {
+export default function Nav({ day, handleBurgerMenu }) {
   return (
-    <div className="nav">
+    <div className={`nav `}>
       <svg
+        onClick={handleBurgerMenu}
         className="icon"
         width="54"
         height="54"
