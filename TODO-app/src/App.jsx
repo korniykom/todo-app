@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainPage from "./pages/MainPage/MainPage";
 import ExerciseList from "./pages/ExerciseList/ExerciseList";
-import PageNotFound from "./components/PageNotFound";
-import Header from "./components/Header";
+import PageNotFound from "./components/PageNotFound/PageNotFound";
+import Header from "./components/Header/Header";
 
 function App() {
   return (

@@ -1,0 +1,13 @@
+.cardList {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2.2rem;
+  overflow-x: scroll;
+  padding-right: 2.2rem;
+  scrollbar-width: none;
+}
+
+.cardList:first-child {
+  padding-left: 2.2rem;
+}

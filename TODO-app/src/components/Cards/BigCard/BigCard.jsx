@@ -1,6 +1,6 @@
+/* eslint-disable react/prop-types */
 import styles from "./BigCard.module.css";
-import image from "/home/max/workout-scheduler/TODO-app/src/components/chair1.jpg";
-export default function BigCard() {
+export default function BigCard({ image }) {
   return (
     <div className={styles.card}>
       <h1 className={styles.title}>Arms</h1>

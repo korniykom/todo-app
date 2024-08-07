@@ -24,6 +24,8 @@
   height: 20rem;
   border-radius: 0.4rem;
   margin-top: 2.2rem;
+  object-fit: cover;
+  filter: grayscale(1);
 }
 
 .lowerCard {
