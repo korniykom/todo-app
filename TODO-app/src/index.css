@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Roboto;
-  list-style-type: none;
 }
 
 html {
@@ -21,4 +20,34 @@ html {
 body {
   background-color: #1e192b;
   color: white;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+
+  width: 20px;
+  height: 20px;
+  border: 2px solid #49454f;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #5a2e8a;
+  border: 2px solid #5a2e8a;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  transform: translateY(-20%);
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
 }
