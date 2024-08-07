@@ -1,3 +1,9 @@
+import BigCard from "../../components/BigCard";
+
 export default function MainPage() {
-  return <div></div>;
+  return (
+    <div>
+      <BigCard />
+    </div>
+  );
 }
