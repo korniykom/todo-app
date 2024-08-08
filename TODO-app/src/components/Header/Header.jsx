@@ -2,18 +2,31 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./Header.module.css";
 
+const getCurrentDayOfTheWeek = () => {
+  const dayNames = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  return dayNames[new Date().getDay()];
+};
+
 export default function Header({ sideBarIsOpen, setSideBarIsOpen }) {
   const navigate = useNavigate();
   const handleClick = () => {
     if (sideBarIsOpen) {
-      setSideBarIsOpen((state) => {
-        return !state;
+      setSideBarIsOpen(() => {
+        return false;
       });
       navigate(-1);
     }
     if (!sideBarIsOpen) {
-      setSideBarIsOpen((state) => {
-        return !state;
+      setSideBarIsOpen(() => {
+        return true;
       });
       navigate("sidebar");
     }
@@ -33,7 +46,9 @@ export default function Header({ sideBarIsOpen, setSideBarIsOpen }) {
         />
       </svg>
 
-      <p className={styles.title}>{sideBarIsOpen ? "Menu" : "Friday"}</p>
+      <p className={styles.title}>
+        {sideBarIsOpen ? "Menu" : getCurrentDayOfTheWeek()}
+      </p>
       <span className={styles.icon}></span>
     </div>
   );

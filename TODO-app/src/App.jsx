@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainPage from "./pages/MainPage/MainPage";
 import ExerciseList from "./pages/ExerciseList/ExerciseList";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
@@ -19,7 +19,10 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="exercises/:exercise" element={<ExerciseList />} />
-          <Route path="sidebar" element={<SideBar />} />
+          <Route
+            path="sidebar"
+            element={<SideBar setSideBarIsOpen={setSideBarIsOpen} />}
+          />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
