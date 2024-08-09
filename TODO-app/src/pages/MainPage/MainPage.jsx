@@ -3,6 +3,7 @@ import BigCard from "../../components/Cards/BigCard/BigCard";
 import arms from "../../images/arms.jpg";
 import chest from "../../images/chest.jpg";
 import abs from "../../images/abs.jpg";
+import { Link } from "react-router-dom";
 
 const Abs = {
   mussleGroup: "Abs",
@@ -29,14 +30,16 @@ export default function MainPage() {
   return (
     <div>
       <CardList>
-        {currentDay === (1 || 5) ? (
+        {currentDay === 1 || currentDay === 5 ? (
           <>
-            <BigCard
-              title={Arms.mussleGroup}
-              subTitle={Arms.trainingDays}
-              duration={Arms.duration}
-              image={arms}
-            />
+            <Link to="exercises/arms">
+              <BigCard
+                title={Arms.mussleGroup}
+                subTitle={Arms.trainingDays}
+                duration={Arms.duration}
+                image={arms}
+              />
+            </Link>
             <BigCard
               title={Chest.mussleGroup}
               subTitle={Chest.trainingDays}
